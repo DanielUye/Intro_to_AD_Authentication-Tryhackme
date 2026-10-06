@@ -1,0 +1,68 @@
+1. Target Information
+- Domain: thm.loc
+- Domain Controller: 192.168.11.100
+- Server: SERVER1.thm.loc
+- Server IP: 192.168.11.51
+
+2. Important Tools
+- smbclient.py
+- getTGT.py
+- GetUserSPNs.py
+- ticketer.py
+- hashcat
+
+3. Important Linux Commands
+- ip a
+- locate
+- find
+- cat
+- ls
+- export KRB5CCNAME=
+
+4. SMB Navigation
+- shares
+- use SHARE#
+- ls
+- get flag#.txt
+- exit
+
+5. Kerberos
+- klist
+- KRB5CCNAME
+- .ccache
+- TGT
+- TGS
+- SPN
+- krbtgt
+
+6. Hashcat Modes
+- 1000  → NTLM
+- 13100 → Kerberos TGS / Kerberoasting
+
+7. Authentication Types
+- NTLM
+- Kerberos
+- Pass-the-Hash
+- Pass-the-Ticket
+
+8. Important Event IDs
+- 4624 → Successful logon
+- 4625 → Failed logon
+- 4768 → Kerberos TGT request
+- 4769 → Kerberos service-ticket request
+- 4771 → Kerberos pre-authentication failure
+
+9. Attack → Concept
+- NTLM hash cracking → Recover password
+- Pass-the-Hash → Authenticate with NTLM hash
+- Kerberoasting → Crack service-account password
+- Golden Ticket → Forge Kerberos TGT
+
+10. SMB Share Workflow
+- Connect
+- shares
+- use SHARE#
+- ls
+- get flag#.txt
+- exit
+- cat flag#.txt
