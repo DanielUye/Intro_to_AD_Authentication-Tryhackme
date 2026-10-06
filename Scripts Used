@@ -1,4 +1,4 @@
 smbclient.py
- getTGT.py
- GetUserSPNs.py
- ticketer.py
+getTGT.py
+GetUserSPNs.py
+ticketer.py
